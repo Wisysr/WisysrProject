@@ -1,0 +1,151 @@
+/* Общие стили */
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Заголовок */
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Sawarabi Gothic', sans-serif; /* Японский стиль для заголовков */
+}
+
+h1 {
+  font-weight: 700;
+  margin: 0;
+  font-size: 36px;
+}
+
+/* Навигация */
+nav {
+  background-color: #000;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Noto Sans JP', sans-serif; /* Японский шрифт для ссылок */
+}
+
+nav ul li a:hover {
+  color: #bbb;
+}
+
+/* Основной контент */
+main {
+  padding: 40px 10%;
+  background-color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+h2 {
+  color: #000;
+  font-size: 28px;
+  font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+p {
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Карточки */
+.card {
+  background-color: #fff;
+  border: 2px solid #000; /* Черные границы для карточек */
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  font-size: 24px;
+  color: #000;
+  font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+.card p {
+  color: #555;
+}
+
+/* Кнопки */
+button {
+  background-color: #000;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Arial', sans-serif;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #333;
+  border-color: #000;
+  color: #fff;
+}
+
+/* Подвал */
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+/* Декоративные элементы */
+.card {
+  border: 3px solid #6A4E9F; /* Фиолетовые акценты для аниме стиля */
+}
+
+nav ul li a {
+  font-family: 'Noto Sans JP', sans-serif; /* Японский шрифт для ссылок */
+}
+
+button {
+  background: linear-gradient(45deg, #6A4E9F, #3A3A75);
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #4A3A6A, #1F1F3D);
+}
+
+/* Анимации */
+button, .card {
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover, .card:hover {
+  transform: scale(1.05);
+}
+.card a {
+  display: block; /* чтобы вся карточка была кликабельной */
+  text-decoration: none; /* убираем подчеркивание ссылок */
+  color: inherit; /* сохраняем цвет текста карточки */
+}

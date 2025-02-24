@@ -1,0 +1,34 @@
+{% extends 'other/layout.html' %}
+
+{% block title %} Топ 10 аниме и манги {% endblock %}
+{% block new %}
+<header>
+  <h1>WisysrProject</h1>
+</header>
+
+<body>
+    <h1>Топ 10 аниме и манги</h1>
+
+    <h2>Топ 10 аниме</h2>
+    <ul>
+        {% for anime in anime_list %}
+            <li>
+                <strong>{{ anime.title }}</strong> (Рейтинг: {{ anime.rank }}) - {{ anime.description }}
+            </li>
+        {% empty %}
+            <li>Нет аниме для отображения.</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Топ 10 манги</h2>
+    <ul>
+        {% for manga in manga_list %}
+            <li>
+                <strong>{{ manga.title }}</strong> (Рейтинг: {{ manga.rank }}) - {{ manga.description }}
+            </li>
+        {% empty %}
+            <li>Нет манги для отображения.</li>
+        {% endfor %}
+    </ul>
+</body>
+{% endblock %}

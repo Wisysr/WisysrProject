@@ -1,0 +1,17 @@
+<h2>Топ 10 аниме</h2>
+<ul>
+    {% for anime in anime_list %}
+        <li>{{ anime.title }} (Рейтинг: {{ anime.rank }}) - {{ anime.description }}</li>
+    {% empty %}
+        <li>Нет аниме для отображения.</li>
+    {% endfor %}
+</ul>
+
+<h2>Топ 10 манги</h2>
+<ul>
+    {% for manga in manga_list %}
+        <li>{{ manga.title }} (Рейтинг: {{ manga.rank }}) - {{ manga.description }}</li>
+    {% empty %}
+        <li>Нет манги для отображения.</li>
+    {% endfor %}
+</ul>
